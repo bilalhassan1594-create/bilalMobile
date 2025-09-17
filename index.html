@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bilal Mobile Repairing Lab</title>
+  <link rel="icon" type="image/png" href="image2.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+<!-- Navbar -->
+<nav class="navbar">
+  <div class="container">
+    <div class="logo">
+      <img src="image2.png" alt="Bilal Mobile">
+      <span>Bilal Mobile Repairing Lab</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#catagory">Category</a></li>
+      <li><a href="work.html">work</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+    <!-- Mobile Menu Button -->
+    <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+  </div>
+</nav>
+<!-- Sliding Text Section (Hero ke neeche) -->
+<div class="sliding-text">
+  <span>⚡ Special Offer: Face ID Repair with 6 Months Warranty • LCD Replacement • Battery Replacement • Data Recovery ⚡</span>
+</div>
+
+
+
+<!-- Hero Section -->
+<header class="hero-header">
+  <div class="overlay"></div>
+  <div class="header-container">
+    <h1 class="glow-text">WELCOME TO Bilal Mobile Repairing Lab</h1>
+    <p class="tagline">Professional iPhone Repairing • Warranty • Trusted by Thousands</p>
+    <a href="services.html" class="cta-btn">Explore Services</a>
+  </div>
+</header>
+
+<!-- Box Section -->
+<div class="image-box-container reveal">
+  <div class="image-box">
+    <img src="image22.png" alt="Bilal Mobile Box">
+    <h2>Bilal Mobile Services</h2>
+    <p>We provide expert iPhone CPU repairing services with advanced tools and techniques, ensuring reliable performance, long-lasting solutions, and customer satisfaction.</p>
+  </div>
+
+  <div class="image-box">
+    <img src="image2.png" alt="Bilal Mobile Box">
+    <h2>Bilal Mobile Services</h2>
+    <p>We provide expert iPhone repairing solutions with warranty & trusted service.</p>
+  </div>
+</div>
+
+<!-- About Section -->
+<section id="about" class="About reveal">
+  <div class="about-text">
+    <h2>About</h2>
+    <p>We're Providing iPhone Repairing Services:</p>
+    <ul class="about-ul">
+      <li>Face ID With 6 Months Warranty</li>
+      <li>Front & Back Glass Replacement</li>
+      <li>100% Data Recovery</li>
+      <li>LCD Replacement</li>
+      <li>Battery Replacement</li>
+      <li>Memory Update</li>
+      <li>Water Damaged Phone</li>
+      <li>And Much More</li>
+    </ul>
+  </div>
+</section>
+
+<!-- Green Screen Section -->
+<section class="Green reveal">
+  <img src="image2.jpg" alt="green screen">
+  <div class="green-text">
+    <h2>Green Screen</h2>
+    <p>
+      Hardware Issues:<br>
+      Problems with the display itself, including the screen's connection 
+      to the phone's logic board, can lead to a green screen.
+    </p>
+  </div>
+</section>
+
+<!-- Video Section -->
+<section class="video-section reveal">
+  <div class="video-container">
+    <h2>Watch Green Screen Repairing Process</h2>
+    <video controls>
+      <source src="video.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+</section>
+<!-- Fun Extras -->
+<div id="confetti"></div>
+<div id="floating-emojis"></div>
+
+<div class="welcome-popup" id="welcomePopup">
+  🎉 Welcome to Bilal Mobile Repairing Lab! 🚀
+</div>
+<!-- Footer -->
+<footer class="reveal">
+  <div class="footer-container">
+    <div class="footer-about">
+      <h3>About Bilal Mobile</h3>
+      <p>We're Providing iPhone Repairing Services</p>
+      <ul>
+        <li>Face ID With 6 Months Warranty</li>
+        <li>Front & Back Glass Replacement</li>
+        <li>100% Data Recovery</li>
+        <li>LCD Replacement</li>
+        <li>Battery Replacement</li>
+        <li>Memory Update</li>
+        <li>Water Damaged Phone</li>
+        <li>And Much More</li>
+      </ul>
+    </div>
+    <div class="footer-contact">
+      <h3>Contact Us</h3>
+      <p>Email: sultanarifbilal92@gmail.com</p>
+      <p>Phone: +92 346-6708003</p>
+      <p>Address: Shop no 1, Basement، Trade Center, Mujahid Rd، opposite ubl bank, Sialkot, Pakistan</p>
+
+      <!-- Social Media Links -->
+      <div class="social-links">
+        <a href="https://www.facebook.com/bilal.hassan.716" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.tiktok.com/@www.bilalmobile.com" target="_blank"><i class="fab fa-tiktok"></i></a>
+        <a href="https://wa.me/923466708003" target="_blank"><i class="fab fa-whatsapp"></i></a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2025 Bilal Mobile. All Rights Reserved.</p>
+    <div class="watermark">Sultan Arif</div>
+  </div>
+</footer>
+<!-- Scripts -->
+<script>
+  // Scroll reveal animation
+  window.addEventListener("scroll", function() {
+    let reveals = document.querySelectorAll(".reveal");
+    for (let i = 0; i < reveals.length; i++) {
+      let windowHeight = window.innerHeight;
+      let revealTop = reveals[i].getBoundingClientRect().top;
+      let revealPoint = 100;
+
+      if (revealTop < windowHeight - revealPoint) {
+        reveals[i].classList.add("active");
+      } else {
+        reveals[i].classList.remove("active");
+      }
+    }
+  });
+ // Mobile Menu Toggle
+  const menuToggle = document.getElementById("menu-toggle");
+  const navLinks = document.querySelector(".nav-links");
+
+  menuToggle.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
+  });
+</script>
+<script src="script.js"></script>
+</body>
+</html>

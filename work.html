@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Work - Bilal Mobile Repairing Lab</title>
+    <link rel="icon" type="image/png" href="image2.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar">
+  <div class="container">
+    <div class="logo">
+      <img src="image2.png" alt="Bilal Mobile">
+      <span>Bilal Mobile Repairing Lab</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#catagory">Category</a></li>
+      <li><a href="work.html" class="active">Work</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+    <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<header class="hero-header">
+  <div class="overlay"></div>
+  <div class="header-container">
+    <h1 class="glow-text">Our Work & Portfolio</h1>
+    <p class="tagline">Professional iPhone Repairing • Trusted by Thousands</p>
+  </div>
+</header>
+
+<!-- Work Gallery -->
+<section class="work-section reveal">
+  <div class="container">
+    <h2>Our Completed Projects</h2>
+    <p>Here are some examples of our successful iPhone repairs:</p>
+
+    <div class="work-gallery">
+      <div class="work-item">
+        <img src="work1.jpg" alt="Work Example 1">
+        <h3>Face ID Repair</h3>
+        <p>Fixed Face ID issues with 6 months warranty.</p>
+      </div>
+      <div class="work-item">
+        <img src="work2.jpg" alt="Work Example 2">
+        <h3>LCD Replacement</h3>
+        <p>High quality LCD replacement with warranty.</p>
+      </div>
+      <div class="work-item">
+        <img src="work3.jpg" alt="Work Example 3">
+        <h3>Battery Replacement</h3>
+        <p>Replaced batteries with original performance.</p>
+      </div>
+      <div class="work-item">
+        <img src="work4.jpg" alt="Work Example 4">
+        <h3>Data Recovery</h3>
+        <p>Recovered 100% lost data successfully.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="reveal">
+  <div class="footer-container">
+    <div class="footer-about">
+      <h3>About Bilal Mobile</h3>
+      <p>We're Providing iPhone Repairing Services</p>
+      <ul>
+        <li>Face ID With 6 Months Warranty</li>
+        <li>Front & Back Glass Replacement</li>
+        <li>100% Data Recovery</li>
+        <li>LCD Replacement</li>
+        <li>Battery Replacement</li>
+        <li>Memory Update</li>
+        <li>Water Damaged Phone</li>
+        <li>And Much More</li>
+      </ul>
+    </div>
+    <div class="footer-contact">
+      <h3>Contact Us</h3>
+      <p>Email: sultanarifbilal92@gmail.com</p>
+      <p>Phone: +92 346-6708003</p>
+      <p>Address: Shop no 1, Basement، Trade Center, Mujahid Rd، opposite UBL bank, Sialkot, Pakistan</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2025 Bilal Mobile. All Rights Reserved.</p>
+    <div class="watermark">Sultan Arif</div>
+  </div>
+</footer>
+
+<!-- Scripts -->
+<script>
+  // Scroll reveal animation
+  window.addEventListener("scroll", function() {
+    let reveals = document.querySelectorAll(".reveal");
+    for (let i = 0; i < reveals.length; i++) {
+      let windowHeight = window.innerHeight;
+      let revealTop = reveals[i].getBoundingClientRect().top;
+      let revealPoint = 100;
+
+      if (revealTop < windowHeight - revealPoint) {
+        reveals[i].classList.add("active");
+      } else {
+        reveals[i].classList.remove("active");
+      }
+    }
+  });
+
+  // Mobile Menu Toggle
+  const menuToggle = document.getElementById("menu-toggle");
+  const navLinks = document.querySelector(".nav-links");
+  menuToggle.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
+  });
+</script>
+
+</body>
+</html>
